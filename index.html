@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>PETANQUE</title>
+		<link rel="StyleSheet" href="style.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+       
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
+ 
+    
+        <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  
+    
+      
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+			</head>
+			<body class="bg-light">
+
+				<nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+					<div class="container">   
+				   <a class="navbar-brand" href="index.html">PETANQUE STATISTIK</a>
+				   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					 <span class="navbar-toggler-icon"></span>
+				   </button>
+			   
+				   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					 <ul class="navbar-nav ml-auto">
+                        <a class="nav-link js-scroll-trigger" href="login.html"><i  class="fa fa-dashboard fa-3x"></i>     FIELD<span class="sr-only">(current)</span></a>
+                        <select name="field_number_select" id="lapangan" >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">22</option>
+                            <option value="24">23</option>
+                            <option value="25">24</option>
+                        </select>
+                        <a class="nav-link js-scroll-trigger" href="login.html"><i  class="fa fa-dashboard fa-3x"></i>     ROUNDE<span class="sr-only">(current)</span></a>
+                        <select name="match_number_select" id="ronde" >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">22</option>
+                            <option value="24">23</option>
+                            <option value="25">24</option>
+                        </select>
+                        <li class="nav-item active">
+                            <button class="btn btn-success" href="" onclick="tampil_data()">    Show Match</button>
+							<button class="btn btn-success" href="" onclick="tampil_final()">    Show Final</button>
+                        </li>
+						
+                    
+
+                    <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger" href="login.html"><i  class="fa fa-dashboard fa-3x"></i>     LOGIN<span class="sr-only">(current)</span></a>
+                      </li>
+					 </ul>
+				   </div>
+				   </div>
+				 </nav>
+
+				 <div class="container">
+					<div class="row">
+                        <div class="col-6 col-md-4">
+                           
+                           
+                        </div>
+                      </div>
+						<div class="col-12 col-md-12 mt-5">
+                            
+							
+							
+							<div class="v6_781">
+								<div class="v6_702"></div>
+								<div class="v6_700"></div>
+								<div class="v13_2">
+									<div class="v6_705"><img id="logo_a" src=""width="100" height="100"  /></div>
+                                    <div class="v6_707"><img id="logo_b" src=""width="100" height="100"  /></div>
+                                   
+									
+									<span class="v6_708">STATISTIK PETANQUE</span>
+									<span class="v6_709">NAME</span>
+									<span class="v6_710">NAME</span>
+									<div class="v6_711"></div>
+									<div class="v6_712"></div>
+									<span class="v6_713">VS</span>
+									<div class="v6_714"></div>
+									<div class="v6_715"></div>
+									<div class="v6_716"></div>
+									<span class="v6_717">MATCH NUMBER</span>
+									<span class="v6_718">FIELD NUMBER</span>
+									<span class="v6_719">ROUNDS</span>
+									<span class="v21_1484" id="team_a_name">Team A</span>
+                                    <span class="v21_1485" id="team_b_name">Team B</span>
+									<span class="v21_1486" id="match_number">TRIPLE</span>
+									<span class="v21_1488" id="round_number">0</span>
+									<span class="v21_1487" id="field_number">F2-10B</span>
+								</div>
+								<div class="v13_3">
+									<div class="v6_753"></div>
+									<div class="v6_754"></div>
+									<div class="v6_755"></div>
+									<div class="v6_756"></div>
+									<div class="v6_757"></div>
+									<div class="v6_758"></div>
+									<div class="v6_759"></div>
+									<div class="v6_760"></div>
+									<div class="v6_761"></div>
+									<div class="v6_762"></div>
+									<div class="v6_763"></div>
+									<div class="v6_764"></div>
+									<div class="v6_765"></div>
+									<div class="v6_766"></div>
+									<div class="v6_767"></div>
+									<div class="v6_768"></div>
+									<div class="v6_769"></div>
+									<div class="v6_770"></div>
+									<div class="v6_771"></div>
+									<div class="v6_772"></div>
+									<div class="v6_773"></div>
+									<div class="v6_774"></div>
+									<div class="v6_720"></div>
+									<div class="v6_721"></div>
+									<div class="v6_722"></div>
+									<div class="v6_723"></div>
+									<div class="v6_724"></div>
+									<div class="v6_725"></div>
+									<div class="v6_726"></div>
+									<div class="v6_727"></div>
+									<div class="v6_728"></div>
+									<div class="v6_729"></div>
+									<div class="v6_730"></div>
+									<div class="v6_731"></div>
+									<div class="v6_732"></div>
+									<div class="v6_733"></div>
+									<div class="v6_734"></div>
+									<div class="v6_735"></div>
+									<div class="v6_736"></div>
+									<div class="v6_737"></div>
+									<div class="v6_738"></div>
+									<div class="v6_739"></div>
+									<div class="v6_740"></div>
+									<div class="v6_741"></div>
+									<div class="v6_742"></div>
+									<div class="v6_743"></div>
+									<div class="v6_744"></div>
+									<div class="v6_745"></div>
+									<div class="v6_746"></div>
+									<div class="v6_747"></div>
+									<div class="v6_748"></div>                
+									<div class="v6_749"></div>
+									<div class="v6_750"></div>
+									<div class="v6_751"></div>
+									<div class="v6_752"></div>
+									<span class="v21_1489">SHOOTING IN TARGET</span>
+									<span class="v21_1503"id="persen_a_1"></span>
+									<span class="v21_1525"id="persen_b_1"></span>
+									<span class="v21_1536"id="skor_b_1"></span>
+									<span class="v21_1537"id="skor_b_2"></span>
+									<span class="v21_1538"id="skor_b_3"></span>
+									<span class="v21_1539"id="skor_b_4"></span>
+									<span class="v21_1540"id="skor_b_5"></span>
+									<span class="v21_1541"id="skor_b_6"></span>
+									<span class="v21_1542"id="skor_b_7"></span>
+									<span class="v21_1543"id="skor_b_8"></span>
+									<span class="v21_1544"id="skor_b_9"></span>
+									<span class="v21_1545"id="skor_b_10"></span>
+									<span class="v21_1546"id="skor_b_11"></span>
+									<span class="v21_1526"id="persen_b_2"></span>
+									<span class="v21_1527"id="persen_b_3"></span>
+									<span class="v21_1528"id="persen_b_4"></span>
+									<span class="v21_1529"id="persen_b_5"></span>
+									<span class="v21_1530"id="persen_b_6"></span>
+									<span class="v21_1531"id="persen_b_7"></span>
+									<span class="v21_1532"id="persen_b_8"></span>
+									<span class="v21_1533"id="persen_b_9"></span>
+									<span class="v21_1534"id="persen_b_10"></span>
+									<span class="v21_1535"id="persen_b_11"></span>
+									<span class="v21_1514"id="skor_a_1"></span>
+									<span class="v21_1515"id="skor_a_2"></span>
+									<span class="v21_1516"id="skor_a_3"></span>
+									<span class="v21_1517"id="skor_a_4"></span>
+									<span class="v21_1518"id="skor_a_5"></span>
+									<span class="v21_1519"id="skor_a_6"></span>
+									<span class="v21_1520"id="skor_a_7"></span>
+									<span class="v21_1521"id="skor_a_8"></span>
+									<span class="v21_1522"id="skor_a_9"></span>
+									<span class="v21_1523"id="skor_a_10"></span>
+									<span class="v21_1524"id="skor_a_11"></span>
+									<span class="v21_1504"id="persen_a_2"></span>
+									<span class="v21_1505"id="persen_a_3"></span>
+									<span class="v21_1506"id="persen_a_4"></span>
+									<span class="v21_1507"id="persen_a_5"></span>
+									<span class="v21_1508"id="persen_a_6"></span>
+									<span class="v21_1509"id="persen_a_7"></span>
+									<span class="v21_1510"id="persen_a_8"></span>
+									<span class="v21_1511"id="persen_a_9"></span>
+									<span class="v21_1512"id="persen_a_10"></span>
+									<span class="v21_1513"id="persen_a_11"></span>
+									<span class="v21_1490">SHOOTING OUT TARGET</span>
+									<span class="v21_1491">POINTING IN TARGET</span>
+									<span class="v21_1492">POINTING OUT TARGET</span>
+									<span class="v21_1493">OUT JACK</span>
+									<span class="v21_1494">CIRCLE FOULS</span>
+									<span class="v21_1495">YELLOW CARD</span>
+									<span class="v21_1496">ORANGE CARD</span>
+									<span class="v21_1497">RED CARD</span>
+									<span class="v21_1498">INITIAL SCORE</span>
+									<span class="v21_1499">FINAL SCORE</span>
+								</div>
+								<div class="v13_4">
+									<span class="v6_775">ARBITRE 1</span>
+									<span class="v6_776">TIME</span>
+									<span class="v6_777">ARBITRE 2</span>
+									<div class="v6_778"></div>
+									<div class="v6_779"></div>
+									<div class="v6_780"></div>
+									<span class="v21_1500"id="arbitre_1">BORTIN</span>
+									<span class="v21_1502"id="arbitre_2">BORTUN</span>
+									<span class="v21_1501"id="waktu">15.00</span>
+								</div>
+							</div>
+						 </div>
+			  
+					 
+					  </div>
+				  </div>
+				
+				  <footer class="text-center text-white mt-5">
+       
+					<div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2);">
+						© 2022 Copyright - Salam Project
+					</div>
+				  </footer>
+				
+			</body>
+
+
+			<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi&display=swap" rel="stylesheet" />
+        <script src="index.js"></script>
+		</html>
+			
+		
